@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1>Thilo Rusche</h1>
+  <p class="lead">Fine art landscape photography prints from locations around Ireland</p>
+
+
+  {%- if site.posts.size > 0 -%}
+  <div class="row gallery">
+    {%- for post in site.posts -%}
+    <div class="col-sm-6 col-md-4">
+      <img src="/assets/images/previews/{{ post.image.src }}" class="thumb" />
+    </div>
+    {%- endfor %}
+  </div>
+  {%- endif -%}
+
+</div>

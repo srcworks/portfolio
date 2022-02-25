@@ -1,0 +1,23 @@
+$border-radius: 0;
+$border-radius-sm: 0;
+$border-radius-lg: 0;
+
+$font-size-base: 1.4rem;
+$h1-font-size: $font-size-base * 3;
+
+@import "bootstrap/bootstrap";
+
+.home {
+  padding-top: 50px;
+  .gallery {
+    > div {
+      margin-bottom: 30px;
+      @include media-breakpoint-down(xs) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  img.thumb {
+    width: 100%;
+  }
+}
