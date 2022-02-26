@@ -2,10 +2,25 @@ $border-radius: 0;
 $border-radius-sm: 0;
 $border-radius-lg: 0;
 
-$font-size-base: 1.4rem;
-$h1-font-size: $font-size-base * 3;
+$font-size-base: 1.0rem;
+$line-height-base: 1.2;
+
+$headings-font-family: 'Oswald', sans-serif;
+$font-family-base: 'Quattrocento', serif;
 
 @import "bootstrap/bootstrap";
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+// Font-Family: 'Muli', Sans-Serif;
 
 .home {
   padding-top: 50px;
@@ -19,6 +34,7 @@ $h1-font-size: $font-size-base * 3;
   }
   img.thumb {
     width: 100%;
+    box-shadow: 5px 5px 10px #ccc;
   }
 }
 
@@ -27,4 +43,8 @@ $h1-font-size: $font-size-base * 3;
   h4, p {
     color: white !important;
   }
+}
+
+.gslide-image {
+  border: 20px solid white;
 }

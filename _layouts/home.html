@@ -3,14 +3,23 @@ layout: default
 ---
 
 <div class="home">
-  <h1>Thilo Rusche</h1>
-  <p class="lead">Fine art landscape photography prints from locations around Ireland</p>
+  <div class="d-md-flex justify-content-between mb-4">
+    <div>
+      <h1>Thilo Rusche</h1>
+      <p>Limited edition landscape photography prints from locations around Ireland</p>
+    </div>
+    <div class="text-left text-md-right mb-4 mb-md-0">
+      <h2>The Glasshouses 2</h2>
+      Lower George's Street<br />
+      Dun Laoghaire
+    </div>
+  </div>
 
 
   {%- if site.posts.size > 0 -%}
   <div class="row gallery">
     {%- for post in site.posts -%}
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-6 col-md-4 col-lg-3">
       <a href="/assets/images/{{ post.image.src }}" class="glightbox" data-glightbox="title: {{ post.title }}; description: .custom-desc-{{ forloop.index }};">
         <img src="/assets/images/previews/{{ post.image.src }}" class="thumb" />
       </a>
