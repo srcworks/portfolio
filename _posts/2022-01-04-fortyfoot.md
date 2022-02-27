@@ -1,4 +1,0 @@
----
-image:
-  src: fortyfoot.jpg
----
