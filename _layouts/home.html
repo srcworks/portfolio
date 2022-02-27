@@ -11,10 +11,21 @@ layout: default
   <div class="row gallery">
     {%- for post in site.posts -%}
     <div class="col-sm-6 col-md-4">
-      <img src="/assets/images/previews/{{ post.image.src }}" class="thumb" />
+      <a href="/assets/images/{{ post.image.src }}" class="glightbox" data-glightbox="title: {{ post.title }}; description: .custom-desc-{{ forloop.index }};">
+        <img src="/assets/images/previews/{{ post.image.src }}" class="thumb" />
+      </a>
+      <div class="glightbox-desc custom-desc-{{ forloop.index }}">
+        <div class="description">{{ post.description }}</div>
+      </div>
     </div>
     {%- endfor %}
   </div>
   {%- endif -%}
 
 </div>
+
+  <script type="text/javascript">
+    const lightbox = GLightbox();
+  </script>
+
+

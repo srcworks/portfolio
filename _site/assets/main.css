@@ -2418,4 +2418,8 @@ a.text-dark:hover, a.text-dark:focus { color: #121416 !important; }
 
 .home img.thumb { width: 100%; }
 
+.gslide-description { background-color: transparent !important; }
+
+.gslide-description h4, .gslide-description p { color: white !important; }
+
 /*# sourceMappingURL=main.css.map */
