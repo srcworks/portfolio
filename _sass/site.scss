@@ -53,3 +53,10 @@ h2 {
 .gslide-image img {
   border: 20px solid white !important;
 }
+
+.info-frame {
+  @extend .py-4;
+  height: 100%;
+  border: 1px solid #b3b3b3;
+  text-align: center;
+}
