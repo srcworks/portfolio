@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<div class="home">
+    <div class="text-center">
+      <h1 class="mb-4">Thilo Rusche</h1>
+      <p class="lead">Fine art landscape photography from locations around Ireland</p>
+      <p>
+      <a href="/ireland">Ireland</a>
+      |
+      <a href="/abstracts">Abstract</a>
+      </p>
+    </div>
+
+
+    {% assign category = page.category %}
+
+  <div class="form-row gallery">
+    {%- for post in site.categories[category] -%}
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <a href="{{ site.baseurl }}/assets/images/{{ category }}/{{ post.image.src }}" class="glightbox frame" data-glightbox="title: {{ post.title }}; description: .custom-desc-{{ forloop.index }};">
+        <img src="{{ site.baseurl }}/assets/images/previews/{{ category }}/{{ post.image.src }}" class="thumb" />
+      </a>
+      <div class="glightbox-desc custom-desc-{{ forloop.index }}">
+        <div class="description">{{ post.description }}</div>
+      </div>
+    </div>
+    {%- endfor %}
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="info-frame d-flex flex-column justify-content-center thumb">
+      <p>See my work at</p>
+      <h2>The Glasshouses GH2</h2>
+      <p>92 Lower George's Street<br />
+      Dun Laoghaire, Co. Dublin</p>
+      <p>
+        <a href="mailto:hello@thilorusche.com">hello@thilorusche.com</a>
+      </p>
+        <a href="https://instagram.com/thilorusche">@thilorusche</a>
+
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <iframe class="info-frame thumb" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9539.174391333478!2d-6.1380837!3d53.2932323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb788e6b4d538f8e6!2sThe%20Glasshouses%20GH2!5e0!3m2!1sen!2sie!4v1649251016041!5m2!1sen!2sie" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </div>
+
+  <div class="text-center">
+  <script async data-uid="5d92501c0c" src="https://astounding-builder-8353.ck.page/5d92501c0c/index.js"></script>
+  </div>
+
+</div>
+
+  <script type="text/javascript">
+    const lightbox = GLightbox();
+  </script>
+
+
