@@ -1,7 +1,9 @@
 # portfolio
 
 
-convert to thumb:
+Notes to self:
+
+* convert to thumbnails:
 
 
 ```
