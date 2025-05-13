@@ -42,7 +42,10 @@ h2 {
     }
   }
   .thumb {
-    border: 15px solid white;
+    border: 10px solid white;
+    @include media-breakpoint-up(md) { 
+      border: 15px solid white;
+    }
     width: 100%;
     box-shadow: 5px 5px 10px #ccc;
   }
@@ -62,7 +65,9 @@ h2 {
 }
 
 .gslide-image img {
-  border: 20px solid white !important;
+  @include media-breakpoint-up(md) { 
+    border: 20px solid white !important;
+  }
 }
 
 .info-frame {
