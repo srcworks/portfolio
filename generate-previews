@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# images are passed in as arguments
+IMAGES=$@
+
+# for each image
+for IMAGE in $IMAGES; do
+  # split image into path and filename
+  path=$(dirname "$IMAGE")
+  filename=$(basename "$IMAGE")
+
+  magick -define jpeg:size=350x350 $IMAGE -thumbnail 350x350^ -gravity center -extent 350x350 $path/previews/$filename
+done
+

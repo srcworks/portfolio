@@ -20,7 +20,7 @@ layout: default
     {%- for post in site.categories[category] -%}
     <div class="col-6 col-md-4 col-lg-3">
       <a href="{{ site.baseurl }}/assets/images/{{ category }}/{{ post.image.src }}" class="glightbox frame" data-glightbox="title: {{ post.title }}; description: .custom-desc-{{ forloop.index }};">
-        <img src="{{ site.baseurl }}/assets/images/previews/{{ category }}/{{ post.image.src }}" class="thumb" />
+        <img src="{{ site.baseurl }}/assets/images/{{ category }}/previews/{{ post.image.src }}" class="thumb" />
       </a>
       <div class="glightbox-desc custom-desc-{{ forloop.index }}">
         <div class="description">{{ post.description }}</div>
